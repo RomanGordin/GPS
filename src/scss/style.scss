@@ -1,0 +1,35 @@
+// main 
+@import 'reset';
+@import 'variable';
+@import 'fonts';
+@import 'icons';
+@import 'mixin/media';
+@import 'container';
+
+// body 
+
+body{
+    background-color: $smoky-white;
+}
+
+// library
+
+// components 
+@import 'components/slider.scss';
+
+// blocks
+@import 'blocks/header.scss';
+@import 'blocks/menu.scss';
+@import 'blocks/hero.scss';
+
+
+// mobile first
+
+@media only screen and (min-width : 768px){
+
+}
+
+@include display($large){
+    
+}
+

@@ -1,0 +1,111 @@
+.slider{
+    &-shadow{
+        position: relative;
+        margin-bottom: 24px;
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            width: 40px;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(248,248,248,0) 0%, rgba(248,248,248,1) 100%);
+        }
+
+        @include display($large){
+            &::before{
+                display: none;
+            }
+        }
+    }
+
+    &-dots{
+        position: relative;
+        display: flex;
+        padding: 0px 0px 0px 16px;
+        overflow: scroll;
+
+        @include display($large){
+            overflow: hidden;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+    }
+
+    &__dot{
+        margin-right: 10.2px;
+        padding: 8px 9.3px;
+        border-radius: 6px;
+        color: $pale-blue;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        white-space: nowrap;
+        transition: background-color, box-shadow 0.4s;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &--active{
+            box-shadow: 0 0 0 2px $pang inset;
+            background-color: #fff;
+        }
+    }
+
+    &-items{
+
+    }
+
+    &__slide{
+        @include display($small){
+            display: flex;
+        }
+    }
+
+    &-content{
+        margin-bottom: 16px;
+
+        @include display($small){
+            margin: 0;
+        }
+    }
+
+    &__text{
+        margin-bottom: 16px;
+        padding: 0 16px;
+        color: $black-and-blue;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+
+        @include display($small){
+            margin: 0 36px 16px 0;
+        }
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        color: $black-and-blue;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+        &::before{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 100%;
+            margin-right: 8px;
+        }
+    }
+
+    &__image{
+        @include display($small){
+            max-width: 50%;
+            object-fit: cover;
+        }
+    }
+}
