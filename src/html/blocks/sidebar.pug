@@ -2,26 +2,34 @@
     .sidebar-wrapper
         .sidebar-header
             .sidebar-buttons
-                button.sidebar-buttons__button 
-                a.sidebar-buttons__logo(href="/")
+                button.sidebar-buttons__button.sidebar__item--hover
+                a.sidebar-buttons__logo.sidebar__item--hover(href="/")
                     img(src="@img/image/logo.svg", alt="GPS")
             .sidebar-buttons
-                button.sidebar-buttons__search.icon--searck2
+                button.sidebar-buttons__search.sidebar__item--hover.icon--searck2
         nav.sidebar-navigation
             ul
-                li.sidebar-navigation__item.sidebar-navigation__item--active Ремонт техники
-                li.sidebar-navigation__item Услуги и сервисы
-                li.sidebar-navigation__item Корпоративным клиентам
-                li.sidebar-navigation__item Продавцам техники
-                li.sidebar-navigation__item Партнерам
-                li.sidebar-navigation__item Производителям
-                li.sidebar-navigation__item Наши сервисные центры
-                li.sidebar-navigation__item Контакты
+                li
+                    a.sidebar-navigation__item(href="/").sidebar-navigation__item--active Ремонт техники
+                li
+                    a.sidebar-navigation__item(href="/") Услуги и сервисы
+                li
+                    a.sidebar-navigation__item(href="/") Корпоративным клиентам
+                li
+                    a.sidebar-navigation__item(href="/") Продавцам техники
+                li
+                    a.sidebar-navigation__item(href="/") Партнерам
+                li
+                    a.sidebar-navigation__item(href="/") Производителям
+                li
+                    a.sidebar-navigation__item(href="/") Наши сервисные центры
+                li
+                    a.sidebar-navigation__item(href="/") Контакты
     .sidebar-contacts 
         .sidebar-links
-            a.sidebar-links__link.icon--phone(href="") 
-            a.sidebar-links__link.icon--chat(href="") 
-            a.sidebar-links__link.icon--person(href="") 
+            a.sidebar-links__link.sidebar__item--hover.icon--phone(href="") 
+            a.sidebar-links__link.sidebar__item--hover.icon--chat(href="") 
+            a.sidebar-links__link.sidebar__item--hover.icon--person(href="") 
         a.sidebar-contacts__mail(href="") mail@cps.com
         a.sidebar-contacts__phone(href="") 8 800 890 8900
         .sidebar-language 
