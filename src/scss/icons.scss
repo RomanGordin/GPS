@@ -11,6 +11,11 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-searck2:before {
+    content: "\e906";
+    color: #fff;
+}
+
 .icon--arrows:before {
     content: "\e905";
     color: #41f6d7;
