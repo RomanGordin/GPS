@@ -104,6 +104,7 @@
 
     &__image{
         @include display($small){
+            border-radius: 6px;
             max-width: 50%;
             object-fit: cover;
         }
